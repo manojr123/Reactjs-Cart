@@ -9,7 +9,15 @@ class CartItem extends React.Component {
       qty: 1,
       img: ''
     }
+    // this.increaseQuantity = this.increaseQuantity.bind(this);
+
   }
+
+  increaseQuantity = () => {
+    console.log('this', this.state);
+  }
+
+
   render () {
     const { price, title, qty } = this.state;
     return (
@@ -23,7 +31,7 @@ class CartItem extends React.Component {
           <div style={ { color: '#777' } }>Qty: {qty} </div>
           <div className="cart-item-actions">
             {/* Buttons */}
-            <i className="fa-solid fa-circle-plus action-icons"></i>
+            <i className="fa-solid fa-circle-plus action-icons"  onClick={this.increaseQuantity}></i>
             <i className="fa-solid fa-circle-minus action-icons"></i>
             <i className="fa-solid fa-trash-can action-icons"></i>
           </div>
