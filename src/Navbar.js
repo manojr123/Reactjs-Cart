@@ -4,7 +4,7 @@ const Navbar = (props) => {
   return (
     <div style={styles.nav}>
       <div style={styles.cartIconContainer}>
-        <i class="fa-solid fa-cart-shopping" style={styles.cartIcon}></i>
+        <i className="fa-solid fa-cart-shopping" style={styles.cartIcon}></i>
         <span style={styles.cartCount}>{props.count}</span>
       </div>
     </div>
